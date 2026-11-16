@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_add_screen">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:text="NHẬP TỪ MỚI"
+        android:textColor="#E65A35"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <!-- Nhập từ tiếng Anh -->
+    <EditText
+        android:id="@+id/edtEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="English"
+        android:textSize="20sp"
+        android:textColor="#333333"
+        android:textColorHint="#999999"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:background="@drawable/bg_input"
+        android:inputType="text"/>
+
+    <!-- Nhập nghĩa tiếng Việt -->
+    <EditText
+        android:id="@+id/edtVietnamese"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:hint="Vietnamese"
+        android:textSize="20sp"
+        android:textColor="#333333"
+        android:textColorHint="#999999"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:background="@drawable/bg_input"
+        android:inputType="text"/>
+
+    <!-- Chọn loại từ -->
+    <RadioGroup
+        android:id="@+id/rgType"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="4dp">
+
+        <RadioButton
+            android:id="@+id/rbNoun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N"
+            android:textSize="12sp"
+            android:buttonTint="#666666"/>
+
+        <RadioButton
+            android:id="@+id/rbVerb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V"
+            android:textSize="12sp"
+            android:buttonTint="#666666"/>
+
+        <RadioButton
+            android:id="@+id/rbAdj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(adj)"
+            android:textSize="12sp"
+            android:buttonTint="#666666"/>
+
+        <RadioButton
+            android:id="@+id/rbAdv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(adv)"
+            android:textSize="12sp"
+            android:buttonTint="#666666"/>
+
+    </RadioGroup>
+
+    <!-- Nút Add -->
+    <Button
+        android:id="@+id/btnAddWord"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="add"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:background="@drawable/bg_add"
+        android:backgroundTint="@null"
+        android:elevation="0dp"/>
+
+</LinearLayout>

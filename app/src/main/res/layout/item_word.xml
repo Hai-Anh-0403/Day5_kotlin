@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="58dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="10dp"
+    android:layout_marginBottom="4dp">
+
+    <TextView
+        android:id="@+id/tvEnglish"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="class"
+        android:textColor="#333333"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tvVietnamese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lớp học"
+        android:textColor="#555555"
+        android:textSize="12sp"/>
+
+</LinearLayout>
